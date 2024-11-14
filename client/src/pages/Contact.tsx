@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import '../styles/style.css';
+import '../styles/styles.css';
 
 function Contact() {
   //sets two state variables for firstName and lastName using `useState`
   const [user, setUser] = useState({
+    userName: '',
     email: '',
-    userName: ''
+    comment: ''
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
 
@@ -16,15 +17,16 @@ function Contact() {
     return setUser({...user, [name]: value});
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
     // Alert the user their first and last name, clear the inputs
     if (user) {
     setUser({
+      userName: '',
       email: '',
-      userName: ''
+      comment: ''
     });
     }
   };
@@ -48,6 +50,13 @@ function Contact() {
           onChange={handleInputChange}
           type="email"
           placeholder="Email"
+        />
+        <input
+          value={user.comment}
+          name="comment"
+          onChange={handleInputChange}
+          type="textarea"
+          placeholder="Comment"
         />
         <button type="submit">
           Submit

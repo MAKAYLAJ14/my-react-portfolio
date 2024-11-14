@@ -1,16 +1,39 @@
+import Project from "../components/Project";
+
 export default function Portfolio() {
-    return (
-        <div>
-          <h1>Portfolio</h1>
-          <p>
-          The quiet hum of the coffee shop filled the air as rain tapped lightly against the windows.
-          People nestled into their corners, some engrossed in books, others working away on laptops,
-          and a few simply enjoying the aroma of freshly brewed coffee. Outside, the world looked softer,
-          blurred by the steady drizzle, while inside, the warmth was comforting and familiar. A barista
-          moved gracefully behind the counter, crafting drinks with a practiced rhythm, and a group of
-          friends nearby laughed, their voices a gentle contrast to the background music. It was one of
-          those moments where everything seemed to fall into place, a perfect blend of calm and quiet connection.
-          </p>
-        </div>
-      );
-};
+  const projects = [
+    {
+      title: "Employee-Tracker",
+      text: "Keep track of your employees with ease.",
+      link: "https://github.com/MAKAYLAJ14/Employee-Tracker",
+    },
+    {
+      title: "weather-dashboard",
+      text: "Monitor the weather around the world.",
+      link: "https://github.com/MAKAYLAJ14/weather-dashboard",
+    },
+    {
+      title: "vehicle-builder",
+      text: "Build and control your vehicle of choice.",
+      link: "https://github.com/MAKAYLAJ14/vehicle-builder",
+    },
+    {
+      title: "Makayla-s-README-Generator",
+      text: "Automatically generates a README file.",
+      link: "https://github.com/MAKAYLAJ14/Makayla-s-README-Generator",
+    },
+    {
+      title: "Munii Budget App",
+      text: "Balance your budget and keep track of upcoming needs.",
+      link: "https://github.com/MAKAYLAJ14/Project-1",
+    },
+  ];
+
+  return (
+    <div className="card-container">
+      {projects.map((project, index) => (
+        <Project key={index} {...project} />
+      ))}
+    </div>
+  );
+}
