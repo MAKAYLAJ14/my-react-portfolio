@@ -2,15 +2,14 @@ export default function Resume() {
     return (
         <div>
           <h1>Resume</h1>
-          <p>
-          The quiet hum of the coffee shop filled the air as rain tapped lightly against the windows.
-          People nestled into their corners, some engrossed in books, others working away on laptops,
-          and a few simply enjoying the aroma of freshly brewed coffee. Outside, the world looked softer,
-          blurred by the steady drizzle, while inside, the warmth was comforting and familiar. A barista
-          moved gracefully behind the counter, crafting drinks with a practiced rhythm, and a group of
-          friends nearby laughed, their voices a gentle contrast to the background music. It was one of
-          those moments where everything seemed to fall into place, a perfect blend of calm and quiet connection.
-          </p>
+          <p>Check out my resume below:</p>
+          <a 
+                href="https://docs.google.com/document/d/1_Fq7D76oJMsW6c1I5m6U3kKJcTKFFx5o/edit?usp=sharing&ouid=107891732533574940988&rtpof=true&sd=true" 
+                target="_blank" 
+                rel="noopener noreferrer"
+          >
+                Download My Resume
+          </a>
         </div>
       );
 };
