@@ -1,0 +1,69 @@
+
+
+div.container-fluid {
+  background-color: #708daa;
+}
+.navbar {
+  background-color: #708daa; /* Light background color */
+  padding: 1rem; /* Padding around the navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Font size for the brand */
+  font-weight: bold; /* Bold text for the brand */
+  background-color: #708daa;
+}
+/* Navbar Links */
+.nav-link {
+  color: #007bff; /* Default link color */
+  padding: 0.5rem 1rem; /* Padding for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+/* Active Link */
+.nav-link.active {
+  font-weight: bold; /* Bold text for active link */
+  color: #0056b3; /* Color for active link */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none; /* Remove border */
+}
+
+.navbar-toggler-icon {
+  background-color: #007bff; /* Color for the toggler icon */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #708daa; /* Background color for mobile menu */
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.card {
+  padding: 2em;
+}
+div.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 800px;
+  min-height: 380px;
+  background: grey;
+  text-align: center;
+  margin: 32px auto;
+  border-radius: 20px;
+  padding-bottom: 32px;
+}

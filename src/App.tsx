@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 import { Outlet } from 'react-router-dom';
-import Navigation from '../src/components/Navigation'; 
+import Navigation from './components/Navigation'; 
 
 const App: React.FC = () => {
   return (
