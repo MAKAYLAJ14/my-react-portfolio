@@ -1,21 +1,38 @@
+html, body {
+  height: 100%; /* Ensure the body takes full height */
+  margin: 0; /* Remove default margin */
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make the container at least the height of the viewport */
+}
+
+.footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  padding: 20px;
+  background-color: #44474e; 
+  color: white;
+  text-align: center;
+}
 
 div.container-fluid {
-  background-color: #708daa;
+  background-color: #44474e;
 }
 .navbar {
-  background-color: #708daa; /* Light background color */
+  background-color: #44474e; /* Light background color */
   padding: 1rem; /* Padding around the navbar */
 }
 
 .navbar-brand {
   font-size: 1.5rem; /* Font size for the brand */
   font-weight: bold; /* Bold text for the brand */
-  background-color: #708daa;
+  background-color: #44474e;
 }
 /* Navbar Links */
 .nav-link {
-  color: #007bff; /* Default link color */
+  color: #052240; /* Default link color */
   padding: 0.5rem 1rem; /* Padding for links */
   text-decoration: none; /* Remove underline */
 }
@@ -42,7 +59,7 @@ div.container-fluid {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .navbar-collapse {
-    background-color: #708daa; /* Background color for mobile menu */
+    background-color: #44474e; /* Background color for mobile menu */
   }
 }
 
@@ -66,4 +83,9 @@ div.card {
   margin: 32px auto;
   border-radius: 20px;
   padding-bottom: 32px;
+}
+.card-container {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center; 
 }

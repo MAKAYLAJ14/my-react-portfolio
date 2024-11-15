@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/styles.css';
+import Footer from '../components/Footer';
 
 function Contact() {
   //sets two state variables for firstName and lastName using `useState`
@@ -62,6 +63,7 @@ function Contact() {
           Submit
         </button>
       </form>
+      <Footer />
     </div>
   );
 }

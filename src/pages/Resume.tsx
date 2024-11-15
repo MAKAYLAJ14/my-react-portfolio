@@ -1,3 +1,5 @@
+import Footer from '../components/Footer';
+
 export default function Resume() {
     return (
         <div>
@@ -10,6 +12,7 @@ export default function Resume() {
           >
                 Download My Resume
           </a>
+          <Footer />
         </div>
       );
 };
