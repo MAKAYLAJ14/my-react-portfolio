@@ -11,41 +11,50 @@ html, body {
 
 .footer {
   margin-top: auto; /* Push the footer to the bottom */
-  background-color: #44474e; 
+  background-color: #c5c8d0; 
   color: white;
   text-align: center;
-  padding: 1rem;
-  max-width: 1280px;
+  padding: 0rem;
+  max-width: 1200px;
 }
 
 div.container-fluid {
-  background-color: #44474e;
+  width: 100%; /* Full width */
+  background-color: #c5c8d0; /* Light background color */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
 }
+
 .navbar {
-  background-color: #44474e; /* Light background color */
-  padding: 1rem; /* Padding around the navbar */
+  background-color: #c5c8d0; /* Light background color */
+  padding: 1rem; /* Increased padding for better spacing */
+  width: 100%; /* Full width */
 }
 
 .navbar-brand {
   font-size: 1.5rem; /* Font size for the brand */
   font-weight: bold; /* Bold text for the brand */
-  background-color: #44474e;
+  color: #052240; /* Change to a darker color for contrast */
 }
+
 /* Navbar Links */
 .nav-link {
   color: #052240; /* Default link color */
   padding: 0.5rem 1rem; /* Padding for links */
   text-decoration: none; /* Remove underline */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition */
 }
 
 .nav-link:hover {
-  color: #0056b3; /* Darker color on hover */
+  color: #ffffff; /* Change text color on hover */
+  background-color: #0056b3; /* Background color on hover */
 }
 
 /* Active Link */
 .nav-link.active {
   font-weight: bold; /* Bold text for active link */
-  color: #0056b3; /* Color for active link */
+  color: #ffffff; /* Change color for active link */
+  background-color: #0056b3; /* Background color for active link */
 }
 
 /* Navbar Toggler */

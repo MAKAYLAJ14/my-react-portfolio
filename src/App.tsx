@@ -6,7 +6,7 @@ import Navigation from './components/Navigation';
 const App: React.FC = () => {
   return (
     <>
-      <Navigation />
+      <Navigation currentPage={''} />
       <Outlet />
     </>
   );

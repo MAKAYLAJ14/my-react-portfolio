@@ -5,9 +5,9 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <p>© 2024 Makayla Johnson </p>
       <div>
-        <a href="https://www.facebook.com" style={{ color: 'white', margin: '0 10px' }}>Facebook</a>
-        <a href="https://www.twitter.com" style={{ color: 'white', margin: '0 10px' }}>Twitter</a>
-        <a href="https://www.linkedin.com" style={{ color: 'white', margin: '0 10px' }}>LinkedIn</a>
+        <a href="https://github.com/MAKAYLAJ14" style={{ color: 'white', margin: '0 10px' }}>GitHub</a>
+        <a href="https://www.linkedin.com/in/makayla-johnson-b09457211/" style={{ color: 'white', margin: '0 10px' }}>LinkedIn</a>
+        <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage" style={{ color: 'white', margin: '0 10px' }}>Indeed</a>
       </div>
     </footer>
   );

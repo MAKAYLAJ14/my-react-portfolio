@@ -1,13 +1,16 @@
-import { Link, useLocation } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useState, MouseEvent } from 'react';
+import { Link } from 'react-router-dom';
 
-const Navigation: React.FC = () => {
-  const currentPage = useLocation().pathname;
-  const [isOpen, setIsOpen] = useState(false);
+interface NavbarProps {
+  currentPage: string; // Define the prop type
+}
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+const Navbar: React.FC<NavbarProps> = ({ currentPage }) => {
+  const [open, setOpen] = useState(false);
+
+  function toggleNavbar(_event: MouseEvent<HTMLButtonElement>): void {
+    setOpen(!open);
+  }
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -18,12 +21,12 @@ const Navigation: React.FC = () => {
           type="button" 
           onClick={toggleNavbar} 
           aria-controls="navbarNav" 
-          aria-expanded={isOpen} 
+          aria-expanded={open} 
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
+        <div className={`collapse navbar-collapse ${open ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link to='/' className={currentPage === '/' ? 'nav-link active' : 'nav-link'} aria-current="page">About Me</Link>
@@ -42,6 +45,6 @@ const Navigation: React.FC = () => {
       </div>
     </nav>
   );
-}
+};
 
-export default Navigation;
+export default Navbar;

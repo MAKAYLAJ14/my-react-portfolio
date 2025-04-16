@@ -9,7 +9,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({ title, text, link, image}) => {
   return (
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card" style={{ width: "19rem"}}>
       <img src={image} className="card-img-top"></img> 
       <div className="card-body">
       <h3 className="card-title">{title}</h3>
