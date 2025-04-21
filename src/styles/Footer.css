@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+footer {
+    background-color: #c5c8d0;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+
+    position: relative; 
+}
+
+div.links {
+    background-color: #c5c8d0;
+}
+
+.footer-links a {
+    color: black; /* White link color */
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -46,7 +46,7 @@ export default function Portfolio() {
       image: project3,
     },
   ];
-
+  
   return (
     <div className="card-container">
       {projects.map((project, index) => (

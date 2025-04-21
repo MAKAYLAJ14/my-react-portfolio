@@ -1,6 +1,5 @@
-html, body {
-  height: 100%; /* Ensure the body takes full height */
-  margin: 0; /* Remove default margin */
+div.container.text-center{
+  min-height: calc(100vh - 50px);
 }
 
 .container {
@@ -9,20 +8,11 @@ html, body {
   height: 100%; /* Make the container at least the height of the viewport */
 }
 
-.footer {
-  margin-top: auto; /* Push the footer to the bottom */
-  background-color: #c5c8d0; 
-  color: white;
-  text-align: center;
-  padding: 0rem;
-  max-width: 1200px;
-}
-
 div.container-fluid {
-  width: 100%; /* Full width */
-  background-color: #c5c8d0; /* Light background color */
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Center items vertically */
+  width: 100%; 
+  background-color: #c5c8d0; 
+  display: flex; 
+  align-items: center; 
 }
 
 .navbar {
@@ -34,29 +24,27 @@ div.container-fluid {
 .navbar-brand {
   font-size: 1.5rem; /* Font size for the brand */
   font-weight: bold; /* Bold text for the brand */
-  color: #052240; /* Change to a darker color for contrast */
+  color: #ffffff; /* Change to a darker color for contrast */
 }
 
 /* Navbar Links */
 .nav-link {
-  color: #052240; /* Default link color */
-  padding: 0.5rem 1rem; /* Padding for links */
+  color: #ffffff; /* Default link color */
+  padding: 1rem 8rem; /* Padding for links */
   text-decoration: none; /* Remove underline */
   transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+  
 }
 
 .nav-link:hover {
-  color: #ffffff; /* Change text color on hover */
-  background-color: #0056b3; /* Background color on hover */
+  color: #052240; /* Change text color on hover */
 }
 
 /* Active Link */
 .nav-link.active {
   font-weight: bold; /* Bold text for active link */
-  color: #ffffff; /* Change color for active link */
-  background-color: #0056b3; /* Background color for active link */
+  color: #ffffff;
 }
-
 /* Navbar Toggler */
 .navbar-toggler {
   border: none; /* Remove border */
@@ -67,35 +55,54 @@ div.container-fluid {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .navbar-collapse {
-    background-color: #44474e; /* Background color for mobile menu */
-  }
+    background-color: #44474e;
+}
+}*/
+
+img.pic {
+  width: 280px;
 }
 
-#root {
-  max-width: 1280px;
+div.me {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
+
+p.aboutme {
+  width: 50%;
+  padding-left: 25%;
+}
+
 .card {
   padding: 2em;
 }
+
 div.card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 800px;
   min-height: 380px;
-  background: grey;
+  background: #c5c8d0;
   text-align: center;
   margin: 32px auto;
   border-radius: 20px;
   padding-bottom: 32px;
 }
+
 .card-container {
   display: flexbox;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; 
+}
+
+h2.resume {
+  text-align: center;
+}
+
+iframe {
+  padding-left: 10%;
+  padding-bottom: 5%;
 }
