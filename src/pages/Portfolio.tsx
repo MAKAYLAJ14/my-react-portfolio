@@ -48,11 +48,14 @@ export default function Portfolio() {
   ];
   
   return (
-    <div className="card-container">
-      {projects.map((project, index) => (
-        <Project key={index} {...project} />
-      ))}
-      <Footer />
-    </div>
+    <>
+      <h2>Projects</h2>
+      <div className="card-container">
+        {projects.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
+        <Footer />
+      </div>
+    </>
   );
 }

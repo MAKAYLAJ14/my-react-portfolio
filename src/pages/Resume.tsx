@@ -22,7 +22,7 @@ import Footer from '../components/Footer';
 export default function Resume() {
     return (
         <div>
-          <h2 className='resume'>Resume</h2>
+          <h2>Resume</h2>
           <iframe 
                 src="https://docs.google.com/document/d/1obNbHRrjAZwCQRk2gBavT4ifhVrIwNxrMmMOJRn1IE8/edit?usp=sharing" 
                 width="80%" 

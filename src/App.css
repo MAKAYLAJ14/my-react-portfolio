@@ -15,22 +15,44 @@ div.container-fluid {
   align-items: center; 
 }
 
+.navbar-nav {
+  list-style: none; /* Removes the bullets */
+  padding: 0;
+  margin: 0; 
+  display: flex; 
+  flex-direction: row; 
+}
+
+.nav-item {
+  margin-right: 100px; /* Add spacing between items */
+}
+
 .navbar {
-  background-color: #c5c8d0; /* Light background color */
-  padding: 1rem; /* Increased padding for better spacing */
+  background-color: #c5c8d0; 
+  padding: 1rem; 
   width: 100%; /* Full width */
+}
+
+h1.navbar-brand {
+  padding-right: 50px;
 }
 
 .navbar-brand {
   font-size: 1.5rem; /* Font size for the brand */
-  font-weight: bold; /* Bold text for the brand */
-  color: #ffffff; /* Change to a darker color for contrast */
+  font-weight: bold; 
+  color: #ffffff; 
+  align-items: center;
+}
+
+ul.navbar-nav {
+  padding-left: 250px;
 }
 
 /* Navbar Links */
 .nav-link {
-  color: #ffffff; /* Default link color */
-  padding: 1rem 8rem; /* Padding for links */
+  color: #ffffff; 
+  font-weight: bold; 
+ /* padding: 0rem 4rem;  Padding for links */
   text-decoration: none; /* Remove underline */
   transition: color 0.3s, background-color 0.3s; /* Smooth transition */
   
@@ -39,27 +61,6 @@ div.container-fluid {
 .nav-link:hover {
   color: #052240; /* Change text color on hover */
 }
-
-/* Active Link */
-.nav-link.active {
-  font-weight: bold; /* Bold text for active link */
-  color: #ffffff;
-}
-/* Navbar Toggler */
-.navbar-toggler {
-  border: none; /* Remove border */
-}
-
-.navbar-toggler-icon {
-  background-color: #007bff; /* Color for the toggler icon */
-}
-
-/* Responsive Styles */
-/*@media (max-width: 768px) {
-  .navbar-collapse {
-    background-color: #44474e;
-}
-}*/
 
 img.pic {
   width: 280px;
@@ -98,7 +99,7 @@ div.card {
   align-items: center; 
 }
 
-h2.resume {
+h2 {
   text-align: center;
 }
 
