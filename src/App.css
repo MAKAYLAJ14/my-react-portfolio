@@ -107,3 +107,44 @@ iframe {
   padding-left: 10%;
   padding-bottom: 5%;
 }
+
+form.form {
+  display: block;
+  margin-top: 1em;
+  unicode-bidi: isolate;
+  width: 20%; 
+  padding-left: 371px;
+  margin-top: 5em;
+  margin-bottom: 11em;
+}
+
+input {
+  display: flex; 
+  align-items: flex-start;
+  flex: 0; /* Allow inputs to grow and take equal space */
+  background-color: #f8f9fa;
+  color: #1a1a1a;
+  border-radius: 10px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  text-align: center;
+}
+
+input.comment {
+  width: 150%;
+  padding: 25px;
+  margin-top: 1.5em;
+  margin-left: 6em;
+}
+
+input.email {
+  width: 75%;
+  margin-top: 1.5em;
+  margin-left: 15em;
+}
+
+input.name {
+  width: 75%;
+  margin-top: 1.5em;
+  margin-left: 15em;
+}

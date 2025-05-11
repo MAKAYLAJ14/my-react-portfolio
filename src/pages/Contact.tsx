@@ -34,23 +34,23 @@ function Contact() {
 
   return (
     <div className="container text-center">
-      <h2>Contact me</h2>
+      <h2 className='contact'>Contact me</h2>
       <form className="form" onSubmit={handleFormSubmit}>
-        <input
+        <input className='name'
           value={user.userName}
           name="userName"
           onChange={handleInputChange}
           type="text"
           placeholder="Name"
         />
-        <input
+        <input className='email'
           value={user.email}
           name="email"
           onChange={handleInputChange}
           type="email"
           placeholder="Email"
         />
-        <input
+        <input className='comment'
           value={user.comment}
           name="comment"
           onChange={handleInputChange}
