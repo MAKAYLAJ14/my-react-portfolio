@@ -9,6 +9,24 @@ import Footer from '../components/Footer';
 
 export default function Portfolio() {
   const projects = [
+      {
+      title: "Munii Budget App",
+      text: "Balance your budget and keep track of upcoming needs.",
+      link: "https://makaylaj14.github.io/Project-1/",
+      image: project1,
+    },
+    {
+      title: "Differential Scheduler",
+      text: "Simplified scheduling for sophisticated offerings (such as home inspections in our case) with minimal engagement. Create appointments that contain multiple time periods and vary in length. Connected to Google and MLS APIs for publicly available home details.",
+      link: "https://differential-scheduler-1.onrender.com/",
+      image: project2,
+    },
+    {
+      title: "Learning Management System",
+      text: "Online class repository where students can learn and see all their class’s relevant information all in one place.",
+      link: "https://learning-management-system-lms-1-il4z.onrender.com/",
+      image: project3,
+    },
     {
       title: "Employee-Tracker",
       text: "Keep track of your employees with ease.",
@@ -27,24 +45,7 @@ export default function Portfolio() {
       link: "https://github.com/MAKAYLAJ14/Makayla-s-README-Generator",
       image: readme,
     },
-    {
-      title: "Munii Budget App",
-      text: "Balance your budget and keep track of upcoming needs.",
-      link: "https://github.com/MAKAYLAJ14/Project-1",
-      image: project1,
-    },
-    {
-      title: "Differential Scheduler",
-      text: "Simplified scheduling for sophisticated offerings (such as home inspections in our case) with minimal engagement. Create appointments that contain multiple time periods and vary in length. Connected to Google and MLS APIs for publicly available home details.",
-      link: "https://github.com/MAKAYLAJ14/Differential_Scheduler/tree/main",
-      image: project2,
-    },
-    {
-      title: "Learning Management System",
-      text: "Online class repository where students can learn and see all their class’s relevant information all in one place.",
-      link: "https://github.com/MAKAYLAJ14/Learning-Management-System-LMS-",
-      image: project3,
-    },
+  
   ];
   
   return (
