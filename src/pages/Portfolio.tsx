@@ -30,19 +30,19 @@ export default function Portfolio() {
     {
       title: "Employee-Tracker",
       text: "Keep track of your employees with ease.",
-      link: "https://github.com/MAKAYLAJ14/Employee-Tracker",
+      link: "https://youtu.be/gZwvFtxPbTQ?si=yyG1yAdQvv8YYCV8",
       image: employee,
     },
     {
       title: "vehicle-builder",
       text: "Build and control your vehicle of choice.",
-      link: "https://github.com/MAKAYLAJ14/vehicle-builder",
+      link: "https://youtu.be/jf8LzP-bobM",
       image: vehicle,
     },
     {
       title: "Makayla-s-README-Generator",
       text: "Automatically generates a README file.",
-      link: "https://github.com/MAKAYLAJ14/Makayla-s-README-Generator",
+      link: "https://youtu.be/eM2Pobv_EYY",
       image: readme,
     },
   
